@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Data Visualisation</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Data Visualisation">
+    <meta name="keyword" content="Food facts ,csv to json,jquery">
+    <meta name="author" content="Nithyaprasanth Pasupathy">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <!-- Moustacha.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js" ></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom StyleSheet and Script File-->
+    <link rel="stylesheet" type="text/css" href="./css/foodFacts.css">
+    <script type="text/javascript" src="./js/foodFacts.js"></script>
+</head>
+
+<body class="container-fluid">
+    <div class="row first-row">
+        <div class="col-md-5">
+            <table class="table table-striped table-responsive table-hover" id="myTable">
+                <tr class="thead-inverse">
+                    <th>Country</th>
+                    <th>Sugar</th>
+                    <th>Salt</th>
+                    <th>Edit</th>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-7" id="graph"></div>
+    </div>
+    <div class="form-group col-md-3">
+    <form id="#formdata">
+    <label for="countryTextBox">Country</label>
+        <input type="text" class="form-control input-sm" id="countryTextBox" required>
+    <label for="sugarTextBox">Sugar</label>
+        <input type="text" class="form-control input-sm" id="sugarTextBox" required>
+    <label for="saltTextBox" >Salt</label>
+        <input type="text" class="form-control input-sm" id="saltTextBox" required>
+    <input type="button" class="btn btn-info" id="add" value="Add">
+        </form>
+    </div>
+  
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    
+</body>
